@@ -24,4 +24,15 @@ app.get("/", (req, res) => {
   });
 });
 
+app.get("/:postId", (req, res) => {
+  const postId = req.params.postId;
+  Post.findOne({ _id: postId }, (err, post) => {
+    if (err) {
+      res.status(400).send("404");
+    } else {
+      res.render("post", { post: post });
+    }
+  });
+});
+
 module.exports = app;
