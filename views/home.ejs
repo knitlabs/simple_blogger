@@ -1,9 +1,16 @@
 <html>
 
 <body>
-    <h1>
-        <%= a %>
-    </h1>
+    <ul>
+        <% for(var i=0; i < posts.length; i ++) { %>
+            <li>
+                <a href="/<%= posts[i]._id %>">
+                    <%= posts[i].title %> | <%= posts[i].author %> | <%= posts[i].content %>
+                </a>
+            </li>
+
+            <% } %>
+    </ul>
 </body>
 
 </html>

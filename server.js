@@ -2,7 +2,7 @@ const express = require("express");
 const helmet = require("helmet");
 const cors = require("cors");
 
-const db = require("./db");
+const Post = require("./models/post");
 
 const app = express();
 
@@ -15,7 +15,13 @@ app.set("views", "./views");
 app.set("view engine", "ejs");
 
 app.get("/", (req, res) => {
-  res.render("home", { a: "Hello, World!" });
+  Post.find((err, posts) => {
+    if (err) {
+      res.status(500).send("Internal Server Error");
+    } else {
+      res.render("home", { posts: posts });
+    }
+  });
 });
 
 module.exports = app;
