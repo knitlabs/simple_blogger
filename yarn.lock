@@ -2220,20 +2220,6 @@ fsevents@~2.3.1:
   languageName: node
   linkType: hard
 
-"simple_blogger@workspace:.":
-  version: 0.0.0-use.local
-  resolution: "simple_blogger@workspace:."
-  dependencies:
-    cors: ^2.8.5
-    dotenv: ^8.2.0
-    ejs: ^3.1.6
-    express: ^4.17.1
-    helmet: ^4.4.1
-    mongoose: ^5.11.17
-    nodemon: ^2.0.7
-  languageName: unknown
-  linkType: soft
-
 "sliced@npm:1.0.1":
   version: 1.0.1
   resolution: "sliced@npm:1.0.1"
@@ -2602,6 +2588,20 @@ fsevents@~2.3.1:
   checksum: 38ea80312cb42e5e8b4ac562d108d675b2354a79f8f125d363671f692657461b9181fd26f4fc9acdca433f8afee099cb78058806e1303e6b15b8fb022affba94
   languageName: node
   linkType: hard
+
+"vie@workspace:.":
+  version: 0.0.0-use.local
+  resolution: "vie@workspace:."
+  dependencies:
+    cors: ^2.8.5
+    dotenv: ^8.2.0
+    ejs: ^3.1.6
+    express: ^4.17.1
+    helmet: ^4.4.1
+    mongoose: ^5.11.17
+    nodemon: ^2.0.7
+  languageName: unknown
+  linkType: soft
 
 "which@npm:^2.0.2":
   version: 2.0.2

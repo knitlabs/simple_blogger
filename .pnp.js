@@ -19,14 +19,14 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
     ],
     "dependencyTreeRoots": [
       {
-        "name": "simple_blogger",
+        "name": "vie",
         "reference": "workspace:."
       }
     ],
     "enableTopLevelFallback": true,
     "ignorePatternData": "(^(?:\\.yarn\\/sdks(?:\\/(?!\\.)(?:(?:(?!(?:^|\\/)\\.).)*?)|$))$)",
     "fallbackExclusionList": [
-      ["simple_blogger", ["workspace:."]]
+      ["vie", ["workspace:."]]
     ],
     "fallbackPool": [
     ],
@@ -2610,22 +2610,6 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD",
         }]
       ]],
-      ["simple_blogger", [
-        ["workspace:.", {
-          "packageLocation": "./",
-          "packageDependencies": [
-            ["simple_blogger", "workspace:."],
-            ["cors", "npm:2.8.5"],
-            ["dotenv", "npm:8.2.0"],
-            ["ejs", "npm:3.1.6"],
-            ["express", "npm:4.17.1"],
-            ["helmet", "npm:4.4.1"],
-            ["mongoose", "npm:5.11.17"],
-            ["nodemon", "npm:2.0.7"]
-          ],
-          "linkType": "SOFT",
-        }]
-      ]],
       ["sliced", [
         ["npm:1.0.1", {
           "packageLocation": "./.yarn/cache/sliced-npm-1.0.1-5537b02c49-af6bd9d911.zip/node_modules/sliced/",
@@ -3023,6 +3007,22 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["extsprintf", "npm:1.4.0"]
           ],
           "linkType": "HARD",
+        }]
+      ]],
+      ["vie", [
+        ["workspace:.", {
+          "packageLocation": "./",
+          "packageDependencies": [
+            ["vie", "workspace:."],
+            ["cors", "npm:2.8.5"],
+            ["dotenv", "npm:8.2.0"],
+            ["ejs", "npm:3.1.6"],
+            ["express", "npm:4.17.1"],
+            ["helmet", "npm:4.4.1"],
+            ["mongoose", "npm:5.11.17"],
+            ["nodemon", "npm:2.0.7"]
+          ],
+          "linkType": "SOFT",
         }]
       ]],
       ["which", [
