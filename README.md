@@ -3,7 +3,7 @@
 ## Dependencies
 
 - Docker
-- NodeJS LTS(14) (If you're using [nvm](https://github.com/nvm-sh/nvm), running `nvm use` after entering the project directory, it will download and use node version specified in `.npmrc`)
+- NodeJS LTS(14) (If you're using [nvm](https://github.com/nvm-sh/nvm), running `nvm use` after entering the project directory, it will download and use node version specified in `.nvmrc`)
 - [yarnpkg](https://yarnpkg.com/) (`npm i -g yarn` to install)
 
 ## Running the database
