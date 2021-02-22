@@ -1,4 +1,4 @@
-# simple_blogger
+# Vie
 
 ## Dependencies
 

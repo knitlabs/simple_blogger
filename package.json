@@ -1,5 +1,5 @@
 {
-  "name": "simple_blogger",
+  "name": "vie",
   "main": "index.js",
   "scripts": {
     "dev": "nodemon .",
