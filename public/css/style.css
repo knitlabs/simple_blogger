@@ -1,1 +1,24 @@
 /* this is a dummy css file */
+html{
+    font-family: 'Mukta', sans-serif;
+    margin:0 auto;
+    width: 50%
+}
+.posts{
+  margin-top: 35px;
+  margin-left: 30px;
+
+}
+
+.post-date{
+    margin-left: 33px;
+    margin-top: 10px;
+}
+
+a{
+    text-decoration: none;
+    font-size: 24px;
+}
+a:hover{
+    color: saddlebrown;
+}
