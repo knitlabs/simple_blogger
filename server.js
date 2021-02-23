@@ -25,13 +25,31 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/:postId", (req, res) => {
+app.get("/posts/:postId", (req, res) => {
   const postId = req.params.postId;
   Post.findOne({ _id: postId }, (err, post) => {
     if (err) {
       res.status(400).send("404");
     } else {
       res.render("post", { post: post });
+    }
+  });
+});
+
+app.get("/new", (req, res) => {
+  res.render("newpost");
+});
+
+app.post("/posts", (req, res) => {
+  const title = req.body.title;
+  const author = req.body.author;
+  const content = req.body.content;
+
+  Post.create({ title, author, content }, (err, post) => {
+    if (err) {
+      res.status(500).send("Internal server error");
+    } else {
+      res.redirect(`/posts/${post._id}`);
     }
   });
 });
