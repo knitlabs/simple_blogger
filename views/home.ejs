@@ -1,36 +1,30 @@
 <html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
-    <link rel="stylesheet" href="/public/css/style.css" />
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0 " >
+        <link rel="stylesheet" href="/public/css/style.css"/>
+    </head>
 
-<body>
+    <body>
+        
+            <h1>Posts</h1>
+            <div class="posts">
+                <% for(var i=0; i < posts.length; i ++) { %>
 
-    <h1>Posts</h1>
-    <a href="/new">
-        <h6>New Post</h6>
-    </a>
-    <div class="posts">
-        <% for(var i=0; i < posts.length; i ++) { %>
+                    <a href="/<%= posts[i]._id %>">
+                        <div class="post-heading"><%= posts[i].title %></div>
+                    </a>
+                    <span class="post-details">By
+                        <%= posts[i].author %>
+                        On
+                        <%= posts[i].date %></span><br>
+                <% } %>
 
-            <a href="/posts/<%= posts[i]._id %>">
-                <div class="post-heading">
-                    <%= posts[i].title %>
-                </div>
-            </a>
-            <span class="post-date">By
-                <%= posts[i].author %>
-                    On
-                    <%= posts[i].date %>
-            </span><br>
-            <% } %>
-
-    </div>
+            </div>
+      
 
 
-
-</body>
+    </body>
 
 </html>
