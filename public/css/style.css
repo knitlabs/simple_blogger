@@ -2,17 +2,23 @@
 html{
     font-family: 'Mukta', sans-serif;
     margin:0 auto;
-    width: 50%
+    width: 40%
 }
 .posts{
-  margin-top: 35px;
+    display: flex;
+    flex-direction: column;
+}
+.post-heading{
+ 
   margin-left: 30px;
 
 }
 
 .post-date{
-    margin-left: 33px;
-    margin-top: 10px;
+    margin-left: 30px;
+    padding-bottom: 15px;
+    border-bottom:1px solid #e1e3e6;
+    
 }
 
 a{
