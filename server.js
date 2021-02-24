@@ -25,7 +25,7 @@ app.get("/", (req, res) => {
   });
 });
 
-app.get("/:postId", (req, res) => {
+app.get("/posts/:postId", (req, res) => {
   const postId = req.params.postId;
   Post.findOne({ _id: postId }, (err, post) => {
     if (err) {
