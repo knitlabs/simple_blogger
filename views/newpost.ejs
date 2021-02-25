@@ -1,16 +1,19 @@
 <html>
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 ">
     <link rel="stylesheet" href="/public/css/style.css" />
 </head>
 
 <body>
-    <form method="POST" action="/posts">
-        <input type="text" name="title" placeholder="title" />
-        <input type="text" name="author" placeholder="author" />
-        <textarea name="content" placeholder="content"></textarea>
-        <button type="submit">Submit</button>
+    <form class="new-post" method="POST" action="/posts">
+        <input class="field" type="text" name="title" placeholder="title" />
+        <input class="field" type="text" name="author" placeholder="author" />
+        <textarea class="field-content" name="content" placeholder="content"></textarea>
+        <button class="post-btn" type="submit">Submit</button>
     </form>
+
 </body>
 
 </html>

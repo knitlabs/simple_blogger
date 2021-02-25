@@ -31,6 +31,25 @@ body {
   text-align: justify;
   font-size: 25px;
 }
+.new-post {
+  display: flex;
+  flex-direction: column;
+  width: 45%;
+  margin: 0 auto;
+}
+.field {
+  margin-top: 15px;
+}
+.field-content {
+  margin-top: 15px;
+  height: 500px;
+}
+.post-btn {
+  height: 20px;
+  width: 100px;
+  align-self: center;
+  margin-top: 25px;
+}
 
 a {
   text-decoration: none;
