@@ -1,5 +1,8 @@
 const express = require("express");
 const helmet = require("helmet");
+const createDOMPurify = require("dompurify");
+const { JSDOM } = require("jsdom");
+const marked = require("marked");
 const cors = require("cors");
 
 const Post = require("./models/post");
@@ -27,11 +30,19 @@ app.get("/", (req, res) => {
 
 app.get("/posts/:postId", (req, res) => {
   const postId = req.params.postId;
+  const window = new JSDOM('').window;
+  const DOMPurify = createDOMPurify(window);
   Post.findOne({ _id: postId }, (err, post) => {
     if (err) {
       res.status(400).send("404");
     } else {
-      res.render("post", { post: post });
+      const postInMD = {
+        title: post.title,
+        author: post.author,
+        date: post.date,
+        content: DOMPurify.sanitize(marked(post.content))
+      }
+      res.render("post", { post: postInMD });
     }
   });
 });
