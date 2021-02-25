@@ -1,10 +1,10 @@
-const mongoose = require("mongoose");
+const mongoose = require('mongoose');
 
 const DB_URI = process.env.DB_URI;
 mongoose.connect(
   DB_URI,
   {
-    auth: { authSource: "admin" },
+    auth: { authSource: 'admin' },
     useNewUrlParser: true,
     useUnifiedTopology: true,
   },
@@ -12,7 +12,7 @@ mongoose.connect(
     if (err) {
       console.log(err);
     } else {
-      console.log("Connected to DB");
+      console.log('Connected to DB');
     }
   }
 );
