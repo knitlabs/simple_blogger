@@ -34,7 +34,7 @@ app.get('/posts/:postId', (req, res) => {
   const DOMPurify = createDOMPurify(window);
   Post.findOne({ _id: postId }, (err, post) => {
     if (err) {
-      res.status(400).send('404');
+      res.status(404).send('404');
     } else {
       const postInMD = {
         title: post.title,
