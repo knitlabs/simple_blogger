@@ -6,7 +6,7 @@ mongoose.connect(
   {
     auth: { authSource: 'admin' },
     useNewUrlParser: true,
-    useUnifiedTopology: true,
+    useUnifiedTopology: true
   },
   (err) => {
     if (err) {
