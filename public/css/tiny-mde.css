@@ -5,8 +5,7 @@
   line-height:24px;
   outline: 1px solid black;
   padding:5px;
-  height: 750px;
-  width: 725px;
+  width: 99%;
 
 }
 
@@ -214,3 +213,4 @@
     fill:#000000;
   }
 }
+

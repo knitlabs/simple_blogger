@@ -50,22 +50,32 @@ body {
 .new-post {
   display: flex;
   flex-direction: column;
-  width: 45%;
+  width: 85%;
   margin: 0 auto;
 }
 .field {
   margin-top: 15px;
+  height: 35px;
+  border: 1px solid black;
+  font-size: 20px;
+  padding: 15px;
 }
 .field-content {
   display: flex;
   flex-direction: column;
-  margin-top: 15px;
+  margin-top: 25px;
   
   align-items: center;
 }
 .post-btn {
   height: 20px;
   width: 100px;
+  background-color: #ff6e6c;
+  border: none;
+  border-radius: 6px;
+  height: 45px;
+  font-size: 15px;
+  font-weight: bold;
   
   margin-top: 25px;
 }
