@@ -16,6 +16,22 @@ body {
   font-size: 11px;
   text-align: center;
 }
+.post-heading{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+.post-btns{
+  display: flex;
+  justify-content: space-between;
+}
+.btn{
+  margin-right: 15px;
+  height: 25px;
+  width: 50px;
+
+}
 .post-header {
   margin-left: 30px;
   font-size: 25px;

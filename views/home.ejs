@@ -14,9 +14,12 @@
 
             <a href="/posts/<%= posts[i]._id %>">
                 <div class="post-heading">
-                    <%= posts[i].title %>
+                    <%= posts[i].title %></a>
+                    <div class="post-btns">
+                        <div class="btn"><button>Edit</button></div>
+                        <div class="btn"><button>Delete</button></div>
+                    </div>
                 </div>
-            </a>
             <span class="post-details">By
                 <%= posts[i].author %>
                     On
