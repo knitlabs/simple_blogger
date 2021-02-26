@@ -57,13 +57,16 @@ body {
   margin-top: 15px;
 }
 .field-content {
+  display: flex;
+  flex-direction: column;
   margin-top: 15px;
-  height: 500px;
+  
+  align-items: center;
 }
 .post-btn {
   height: 20px;
   width: 100px;
-  align-self: center;
+  
   margin-top: 25px;
 }
 
